@@ -1,49 +1,70 @@
-# 🚀 ReachHR.ai
+<h1 align="center">ReachHR 🚀</h1>
+<p align="center">
+  <b>Find HRs. Connect Smart. Land Opportunities.</b><br>
+  AI-powered tool to discover HR profiles and craft personalized cold messages.
+</p>
 
-> 🤖 Find the right HR. Craft the perfect message. Get closer to your dream job.
-
-ReachHR.ai is an AI-powered Streamlit web app that helps students and job seekers reach out to HRs and recruiters directly. It fetches real HR profiles from LinkedIn based on the company and location, then generates a cold message tailored to your intent — powered by ChatGPT.
-
----
-
-## ✨ Features
-
-🔍 **Company Website Finder**  
-→ Fetches official company website using Google Custom Search API
-
-👥 **HR / Recruiter Profile Finder**  
-→ Finds real LinkedIn profiles of HRs/recruiters in your target company and city
-
-✉️ **Cold Message Generator**  
-→ Write personalized cold messages using OpenAI GPT-4o based on your intent (internship, referral, job inquiry, etc.)
-
-💡 **Clean & Minimal UI**  
-→ Built with Streamlit — responsive, fast, and ready to deploy
+<p align="center">
+  <img src="https://img.shields.io/badge/Streamlit-Deployed-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/OpenAI-GPT4o-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Google-Custom_Search-yellow?style=flat-square" />
+  <img src="https://img.shields.io/badge/Python-3.10+-brightgreen?style=flat-square" />
+</p>
 
 ---
 
-## 🎥 Demo (Optional GIF/Screenshot here)
+## ✨ Overview
 
-*Coming soon...*
+**ReachHR.ai** is a smart and lightweight AI-powered web app built with Streamlit that helps students and professionals reach out to HRs and recruiters effectively. Given a **company name** and **location**, the app:
 
----
+1. 📡 Fetches the **official website**
+2. 🔍 Extracts relevant **HR or recruiter LinkedIn profiles**
+3. ✉️ Generates a **personalized cold message** using ChatGPT (GPT-4o)
 
-## 🚀 Tech Stack
-
-| Tool        | Purpose                              |
-|-------------|--------------------------------------|
-| 🐍 Python   | Core backend logic                   |
-| 📦 Streamlit | UI and web app framework            |
-| 🌍 Google Custom Search API | For company & LinkedIn results |
-| 🤖 OpenAI GPT-4o | Cold message generation           |
-| 🔐 dotenv   | API key management                    |
+> Whether you're looking for an internship, referral, or full-time role — ReachHR.ai saves your time and boosts your reach.
 
 ---
 
-## 📦 Getting Started
+## 🚀 Live Demo
 
-### 1. Clone the repo
+👉 [Click here to try ReachHR.ai](#)  
+*(Insert your Streamlit Cloud deployment link once live)*
+
+---
+
+## 🔧 Tech Stack
+
+| Tool              | Role                             |
+|-------------------|----------------------------------|
+| Python            | Core logic and integration       |
+| Streamlit         | Frontend & UI                    |
+| OpenAI GPT-4o     | AI-powered message generation    |
+| Google CSE API    | Web & LinkedIn search            |
+| dotenv / Secrets  | Secure API key management        |
+
+---
+
+## 📸 Screenshots
+
+| Home | Results |
+|------|---------|
+| ![home](./assets/home.png) | ![results](./assets/results.png) |
+
+---
+
+## ⚙️ How It Works
+
+1. 🔎 Enter **Company Name** & **Location**
+2. 🌐 App fetches official website + LinkedIn HRs
+3. 🧠 Enter your **purpose** (e.g. ask for internship)
+4. ✉️ App generates a **concise cold message** you can directly paste on LinkedIn
+
+---
+
+## 🛠️ Getting Started (Local Setup)
+
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/ReachHR.ai.git
-cd ReachHR.ai
+git clone https://github.com/yourusername/reachhr.ai.git
+cd reachhr.ai
