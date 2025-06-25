@@ -107,3 +107,16 @@ COHERE_API_KEY = "your_key"
 ```
 
 Click “Deploy” 🚀
+
+---
+
+<h2 align="center">🙌 Made By</h2>
+
+<p align="center">
+  Built with ❤️ by <a href="https://www.linkedin.com/in/harjyot-singh-75a835254/" target="_blank"><b>Harjyot Singh</b></a><br>
+  A passionate learner & builder focused on Python, AI & ML, automation & impactful tools.
+</p>
+
+<p align="center">
+  If you found this project useful, feel free to ⭐ star the repo and connect on LinkedIn!
+</p>
