@@ -16,6 +16,7 @@ if st.button("🔍 Find HR Profiles"):
     if company.strip() and location.strip():
         st.subheader("🌐 Company Website")
         website = get_company_name(company)
+        print(website)
         st.write(website)
 
         st.subheader("👥 HRs / Recruiters")
@@ -35,7 +36,7 @@ st.subheader("✍️ Cold Message Generator")
 
 user_goal=st.text_area(
     "🎯 What do you want to say?",
-    placeholder="e.g. Provide your basic information and the Internship role you want to apply for"
+    placeholder="e.g. Provide detailed information about yourself and the role you want to apply for"
 )
 
 if st.button("✉️ Generate Cold Message"):

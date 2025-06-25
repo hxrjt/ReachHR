@@ -22,6 +22,7 @@ def get_company_name(company_name):
         response=requests.get(url, params=param)
         data=response.json()
         results=response.json().get("items",[])
+        print(results)
         if results:
             for item in results:
                 link=item["link"]
