@@ -1,9 +1,12 @@
 import os
-import openai
+import cohere
 from dotenv import load_dotenv
 
-load_dotenv()
-openAI_key=os.getenv("OPENAI_API_KEY")
+
+load_dotenv(dotenv_path=".gitignore\.env")
+cohere_api_key = os.environ.get("COHERE_API_KEY")
+co=cohere.Client(cohere_api_key)
+
 
 def generate_cold_message(company,user_prompt):
     """
@@ -17,10 +20,8 @@ def generate_cold_message(company,user_prompt):
         str: AI-generated cold message
     """
     prompt = f"""
-    You are an expert at writing effective, human-sounding cold messages on LinkedIn.
-
     Task:
-    Write a cold message addressed to someone at {company}.
+    Write a cold message addressed to someone at {company} for an Internship.
     The user's information and goal is: {user_prompt}
 
     Guidelines:
@@ -33,13 +34,12 @@ def generate_cold_message(company,user_prompt):
     Write the message now:
     """
     try:
-        response=openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role":"user","content":prompt}],
-            temperature=0.7,
-            max_tokens=400
+        response=co.generate(
+            model="command-r-plus",
+            prompt=prompt,
+            max_tokens=500,
+            temperature=0.7
         )
-        return response["choices"][0]["message"]["content"].strip()
-    
+        return response.generations[0].text.strip()
     except Exception as e:
         return f"❌ Error generating message: {str(e)}"
