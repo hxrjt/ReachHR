@@ -27,8 +27,7 @@
 
 ## 🚀 Live Demo
 
-👉 [Click here to try ReachHR](#)  
-*(Insert your Streamlit Cloud deployment link once live)*
+👉 **[Click here to try ReachHR](https://reachhr.streamlit.app/)**
 
 ---
 
