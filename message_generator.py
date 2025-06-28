@@ -20,16 +20,18 @@ def generate_cold_message(company,user_prompt):
         str: AI-generated cold message
     """
     prompt = f"""
+    You are an expert at cold message generating expert.
+
     Task:
     Write a cold message addressed to someone at {company} for an Internship.
     The user's information and goal is: {user_prompt}
 
     Guidelines:
     - Keep it precise and good.
-    - Be polite, professional, and conversational.
+    - Be polite and professional.
     - Do not sound robotic or overly formal.
     - This message should be usable in a LinkedIn DM.
-    - The message sould be 7-8 lines such that the person can send their CV after the message
+    - The message sould be of appropriate length such that the person can send their CV after the message
 
     Write the message now:
     """
