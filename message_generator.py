@@ -20,7 +20,7 @@ def generate_cold_message(company,user_prompt):
         str: AI-generated cold message
     """
     prompt = f"""
-    You are an expert at cold message generating expert.
+    You are a cold message generating expert.
 
     Task:
     Write a cold message addressed to someone at {company} for an Internship.
