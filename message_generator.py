@@ -3,7 +3,7 @@ import cohere
 from dotenv import load_dotenv
 
 
-load_dotenv(dotenv_path=".gitignore\.env")
+load_dotenv()
 cohere_api_key = os.environ.get("COHERE_API_KEY")
 co=cohere.Client(cohere_api_key)
 
