@@ -42,11 +42,8 @@
 
 ---
 
-## 📸 Screenshots
-
-| Home | Results |
-|------|---------|
-| ![home](./assets/home.png) | ![results](./assets/results.png) |
+## 📸 WorkFlow
+![Workflow](ReachHR.png)
 
 ---
 
