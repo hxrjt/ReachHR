@@ -54,11 +54,13 @@ def get_hr_profiles(company_name,location,max_result=10):
             snippet=item.get("snippet","")
             # if company_name.lower() in title.lower() or (company_name.lower() in snippet.lower() and location.lower() in snippet.lower()):
             # if (location.lower() in snippet.lower()) or (location.lower() in title.lower()):
-            profiles.append({
-                "name":item["title"],
-                "link":item["link"],
-                "snippet":item.get("snippet","")
-            })
+            if company_name.lower() in title.lower() or company_name in snippet.lower():
+
+                profiles.append({
+                    "name":item["title"],
+                    "link":item["link"],
+                    "snippet":item.get("snippet","")
+                })
         # return profiles if profiles else[{"name": "No HRs found in this location", "link": "", "snippet": ""}]
         print(profiles)
         return profiles
