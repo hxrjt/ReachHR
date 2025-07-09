@@ -10,7 +10,7 @@ GOOGLE_CX=os.getenv("GOOGLE_CX")
 def get_company_name(company_name):
     #Returns the official website of company
 
-    query=f"{company_name} Official Site"
+    query=f"{company_name} Official Website"
     url=f"https://www.googleapis.com/customsearch/v1"
     param={
         "key":GOOGLE_API_KEY,
